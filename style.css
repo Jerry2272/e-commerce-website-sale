@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-family: 'Kaisei Tokumin', serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+/* navbar section  */
+.navbar .navbar-brand span{
+    letter-spacing: 4px;
+    font-family: 'Kaisei Tokumin', serif;
+    position: relative;
+    top: 4px;
+}
+.navbar .navbar-brand  img{
+    width: 40px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    margin-left: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.5 ease-in-out;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    background: #e5345b;
+    color: #fff;
+}
+.navbar  .form .span {
+    position: relative;
+}
+.navbar  .form .span span{
+    position: absolute;
+    top: 0;
+    background-color:#e5345b ;
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* hero section  */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0,0),rgba(0, 0, 0,1)), url("/images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hero-section p{
+    font-size: 32px;
+}
+.hero-section .btn{
+    background: #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #555555;
+    transition: all 0.56s;
+}
+.hero-section .btn:hover,.special  .btn:hover, .discount-offer .btn:hover, .blog .btn:hover, .collection button:hover{
+    background-color: #e5345b;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+
+/* collection section  */
+
+/* .active-filter-btn {
+    background-color: red;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+} */
+.collection i{
+    color: #e5345b;
+}
+.collection h2{
+    position: relative;
+    display: inline-block;
+
+}
+.collection button{
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+    width: auto;
+    margin: 10px;
+    height: 38px;
+}
+.title{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.title h2::before{
+    content: '';
+    position: absolute;
+    background-color: #e5345b;
+    width: 4px;
+    height: 60px;
+    left: -20px;
+    transform: translateY(-20%);
+    /* transform: translate(-20%, -20%); */
+}
+.discount{
+    position: absolute;
+    right: 0;
+    top: 8%;
+    transform: translateX(-40%);
+    width: 50px;
+    height: 50px;
+    background-color: #e5345b;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.cart{
+  position: absolute;
+  top: 0px;
+  right: 0;
+ transform: translate(-2em, 2em);
+}
+.cart i{
+    color: #e5345b;
+}
+
+
+/* special section  */
+.special .card-body{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.special .card-body:hover img{
+    scale: 1.3;
+}
+.special .btn{
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+
+/* discount section  */
+.discount-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0,0),rgba(0, 0, 0,1)), url("/images/offer_img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 603px;
+}
+.discount-offer p{
+    font-size: 32px;
+}
+.discount-offer .btn{
+    background: #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+/* blog section  */
+.blog{
+    text-align: center;
+}
+.blog .card{
+    text-align: start;
+}
+.blog .btn{
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+/* popular section  */
+.popular .item .d-flex{
+    margin-bottom: 40px;
+}
+
+/* newsletter section  */
+.newsletter form input{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 5px;
+    width: 60%;
+    padding-left: 20px;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+.newsletter form button{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+   width: 28%;
+   height: 43px;
+   background-color: #e5345b;
+   color: #fff;
+   border-color: #e5345b;
+   transition: all 0.54s;
+}
+.newsletter form button:hover{
+    background-color: #212529;
+    border: none;
+}
+
+/* footer section  */
+.footer .navbar-brand span{
+    letter-spacing: 4px;
+    font-family: 'Kaisei Tokumin', serif;
+    position: relative;
+    top: 4px;
+}
+.footer .navbar-brand  img{
+    width: 40px;
+}
+.link ul li a{
+    line-height: 34px;
+}
+
+@media (min-width: 992px) {
+    h1{
+        font-size: 60px;
+    }
+}
+
+
+@media (max-width: 568px) {
+    .hero-section h1{
+        font-size: 60px;
+    }
+}

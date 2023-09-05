@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website/E-commerce</title>
+  <link rel="stylesheet" href="boots/bootstrap.min.css">
+  <link rel="stylesheet" href="Font_6/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- navbar section  -->
+  <nav class="navbar navbar-light navbar-expand-lg bg-white fixed-top">
+    <div class="container p-2">
+      <a class="navbar-brand order-lg-0" href="#"><img src="images/logo.png" alt="" class="img-fluid me-2"><span
+          class="text-uppercase fw-bold">Attire</span></a>
+      <div class="form order-lg-2 text-center">
+        <ul class="d-lg-flex justify-content-center" style="gap: 30px;">
+          <a href="#" class="span btn">
+            <i class="fab fa-opencart text-dark fw-bold"></i>
+            <span class="translate-middle ms-3">5</span>
+          </a>
+          <a href="#" class="span btn">
+            <i class="far fa-heart text-dark fw-bold"></i>
+            <span class="translate-middle ms-3">2</span>
+          </a>
+          <a href="#"><i class="fa fa-search text-dark fw-bold"></i></a>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars-staggered text-dark" onclick="menuBar(this)"></i></span>
+      </button>
+      <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+        <ul class="navbar-nav text-center mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active-nav fs-6 fw-light text-dark" href="#home" role="button" aria-expanded="false">
+              Home
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link -toggle fs-6 fw-light text-dark" href="#collection" id="navbar" role="button" data-bs-toggle=""
+              aria-expanded="false">
+              Collection
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link -toggle fs-6 fw-light text-dark" href="#special" id="navbar" role="button" data-bs-toggle=""
+              aria-expanded="false">
+              Specials
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link -toggle fs-6 fw-light text-dark" href="#blog" id="navbar" role="button" data-bs-toggle=""
+              aria-expanded="false">
+              Blogs
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link -toggle fs-6 fw-light text-dark" href="#about" id="navbar" role="button" data-bs-toggle=""
+              aria-expanded="false">
+              About us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link -toggle fs-6 fw-light text-dark" href="#popular" id="navbar" role="button" data-bs-toggle=""
+              aria-expanded="false">
+              Popular
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End of navbar section  -->
+
+  <!-- header section / hero section  -->
+  <section class="hero-section mt-5 vh-100" id="home">
+    <div class="container carousel slide" data-bs-ride="carousel">
+      <div class="row align-item-center carousel-inner">
+        <div class="col-lg-6 text-center carousel-item active">
+          <p>Best Collection</p>
+          <h1 class="py-4">NEW ARRIVALS</h1>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="col-lg-6 text-center carousel-item">
+          <p>Best Prices & Offer</p>
+          <h1 class="py-4">NEW Season</h1>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+
+      </div>
+      <button class="carousel-control-next">
+        <span><i class="fa fa-arrow-right" data-bs-target=".slide" data-bs-slide="next"></i></span>
+      </button>
+      <button class="carousel-control-prev">
+        <span><i class="fa fa-arrow-left" data-bs-target=".slide" data-bs-slide="prev"></i></span>
+      </button>
+    </div>
+  </section>
+  <!-- End of header section / hero section  -->
+
+  <!-- section collection  -->
+  <section class="collection py-5" id="collection">
+    <div class="container text-center">
+      <div class="title">
+        <h2>New Collection</h2>
+      </div>
+      <div class="row justify-content-center py-5">
+        <button data-filter="*" class="active-filter-btn single">All</button>
+        <button data-filter=".best-seller">Best Sellers</button>
+        <button data-filter=".feature">Featured</button>
+        <button data-filter=".new-arrival">New Arrival</button>
+      </div>
+      <div class="row pt-5 mix-up-items gy-3">
+        <div class="col-lg-3 filter-control-active mix">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+            </div>
+            <div class="discount">
+              <span>Sale</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 new-arrival feature mix">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/c_pant_girl.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+            </div>
+            <div class="discount">
+              <span>Sale</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 best-seller mix">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/c_polo-shirt.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+            </div>
+            <div class="discount">
+              <span>Sale</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 new-arrival mix">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/c_shirt-girl.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+            </div>
+            <div class="discount">
+              <span>Sale</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 feature best-seller mix">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/c_t-shirt_men.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+            </div>
+            <div class="discount">
+              <span>Sale</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 new-arrival mix">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/c_tunic-shirt_girl.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+            </div>
+            <div class="discount">
+              <span>Sale</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 best-seller mix">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/c_undershirt.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+            </div>
+            <div class="discount">
+              <span>Sale</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mix  best-seller">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/c_western-shirt.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+            </div>
+            <div class="discount">
+              <span>Sale</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of section collection  -->
+
+  <!-- special section  -->
+  <section class="special" id="special">
+    <div class="container text-center">
+      <div class="title">
+        <h2>Special Selection</h2>
+      </div>
+      <div class="row pt-5 gy-3">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/special_product_1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="cart">
+              <span><i class="fa fa-heart fs-4"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/special_product_2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="cart">
+              <span><i class="fa fa-heart fs-4"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/special_product_3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="cart">
+              <span><i class="fa fa-heart fs-4"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 position-relative">
+            <div class="card-body">
+              <img src="images/special_product_4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-footer bg-white border-0">
+              <span class="fw-light fs-6">Gray Shirt</span>
+              <p class="fw-bold">$ 45.50</p>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="cart">
+              <span><i class="fa fa-heart fs-4"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of special section  -->
+
+  <!-- discount section  -->
+  <section class="discount-offer py-5 my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="fw-light">Discount Up To 40%</p>
+          <h1>Grand Sale Offer</h1>
+          <a href="#" class="btn text-capitalize fs-1 my-3">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of discount section  -->
+
+  <!-- blog section  -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="title">
+        <h2 class="text-center">Our Lastest Blog</h2>
+      </div>
+      <div class="row pt-5 gy-3">
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <div class="card-img-top">
+              <img src="images/blog_1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title fs-5 fw-bold lead">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+              <p class="card-text mt-3 text-muted small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem
+                molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis
+                aliquid ipsam fuga.
+              </p>
+              <p class="small"><b>Author:</b>Jerry Jake</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <div class="card-img-top">
+              <img src="images/blog_2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title fs-5 fw-bold">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+              <p class="card-text mt-3 text-muted small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem
+                molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis
+                aliquid ipsam fuga.
+              </p>
+              <p class="small"><b>Author:</b>Jerry Jake</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <div class="card-img-top">
+              <img src="images/blog_3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title fs-5 fw-bold">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+              <p class="card-text mt-3 text-muted small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem
+                molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis
+                aliquid ipsam fuga.
+              </p>
+              <p class="small"><b>Author:</b>Jerry Jake</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of blog section  -->
+
+  <!-- about section -->
+  <section class="about py-5" style="background-color: rgba(179, 179, 179, 0.05);" id="about">
+    <div class="container">
+      <div class="row gy-2">
+        <div class="col-lg-6 order-last">
+          <img src="images/about_us.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6 ps-2 pt-4 order-lg-last">
+          <div class="title ms-4">
+            <h2 class="py-4">About Us</h2>
+          </div>
+          <p class="lead text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.
+          </p>
+          <p class="small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of about section -->
+
+  <!-- popular section  -->
+  <section class="popular" id="popular">
+    <div class="container text-center">
+      <div class="title text-center">
+        <h2>Popular Of This Year</h2>
+      </div>
+      <div class="row pt-5 justify-content-center mx-auto gy-3">
+        <div class="col-lg-3 item">
+          <h6 class="fs-4 py-4">Top Rated</h6>
+          <div class="d-flex">
+            <img src="images/top_rated_1.jpg" alt="" class="img-fluid w-25">
+            <div class="text ms-3">
+              <p class="mb-0">Blue Shirt</p>
+              <span>$ 20.00</span>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img src="images/top_rated_2.jpg" alt="" class="img-fluid w-25">
+            <div class="text ms-3">
+              <p class="mb-0">Wrist Watch</p>
+              <span>$ 90.00</span>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img src="images/top_rated_3.jpg" alt="" class="img-fluid w-25">
+            <div class="text ms-3">
+              <p class="mb-0">Red Sweater</p>
+              <span>$ 90.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 item">
+          <h6 class="fs-4 py-4">Best Selling</h6>
+          <div class="d-flex">
+            <img src="images/best_selling_1.jpg" alt="" class="img-fluid w-25">
+            <div class="text ms-3">
+              <p class="mb-0">Gray Suit</p>
+              <span>$ 20.00</span>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img src="images/best_selling_2.jpg" alt="" class="img-fluid w-25">
+            <div class="text ms-3">
+              <p class="mb-0">Black Shirt</p>
+              <span>$ 110.00</span>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img src="images/best_selling_3.jpg" alt="" class="img-fluid w-25">
+            <div class="text ms-3">
+              <p class="mb-0">Gray Shirt</p>
+              <span>$ 20.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 item">
+          <h6 class="fs-4 py-4">On Sale</h6>
+          <div class="d-flex">
+            <img src="images/on_sale_1.jpg" alt="" class="img-fluid w-25">
+            <div class="text ms-3">
+              <p class="mb-0">Blue Bag</p>
+              <span>$ 20.00</span>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img src="images/on_sale_2.jpg" alt="" class="img-fluid w-25">
+            <div class="text ms-3">
+              <p class="mb-0">Sweater</p>
+              <span>$ 20.00</span>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img src="images/on_sale_3.jpg" alt="" class="img-fluid w-25">
+            <div class="text ms-3">
+              <p class="mb-0">Black Shoe</p>
+              <span>$ 75.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of popular section  -->
+
+  <!-- newsletter section  -->
+  <section class="newsletter py-5">
+    <div class="container">
+      <div class="row justify-content-center text-center pt-5">
+        <div class="col-lg-6">
+          <div class="title">
+            <h2>Newsletter Subscription</h2>
+          </div>
+          <p class="py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rem officia accusantium maiores quisquam dolorum?
+          </p>
+          <form class="input-group text-center d-lg-flex justify-content-center">
+            <input type="email" placeholder="Enter Your Email..">
+            <button type="button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of newsletter section  -->
+
+
+  <!-- footer section  -->
+  <section class="footer py-5 bg-black text-white mb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <a class="navbar-brand mb-5" href="#"><img src="images/logo.png" alt="" class="img-fluid me-2 bg-dark"><span class="text-uppercase fw-bold">Attire</span></a>
+            <p  class="text-white-50 pt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?
+            </p>
+        </div>
+        <div class="col-lg-3 link">
+          <h5 class="mb-4 fw-light">Links</h5>
+          <ul class="p-0">
+            <li>
+              <a href="#" class="text-dark">
+                <i class="fa fa-angle-right me-2 text-white-50"></i>
+                <span  class="text-white-50">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-dark">
+                <i class="fa fa-angle-right me-2 text-white-50"></i>
+                <span  class="text-white-50">Collection</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-dark">
+                <i class="fa fa-angle-right me-2 text-white-50"></i>
+                <span  class="text-white-50">Blogs</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-dark">
+                <i class="fa fa-angle-right me-2 text-white-50"></i>
+                <span  class="text-white-50">About Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="mb-4 fw-light">Contact Us</h5>
+          <ul class="p-0">
+            <li>
+                <i class="fas fa-map-marked-alt me-2"></i>
+                <span class="text-white-50"> Albert Street, New York, AS 756, United States of America</span>
+            </li>
+            <li class="py-3">
+              <i class="fas fa-envelope me-2"></i>
+              <span  class="text-white-50">attire.support@gmail.com</span>   
+          </li>
+            <li>
+              <i class="fas fa-phone-alt me-2"></i>
+              <span  class="text-white-50">+234 916 172 9605</span>   
+          </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="mb-4 fw-light">Follow Us</h5>
+          <ul class="p-0 d-flex" style="gap: 30px;">
+            <li>
+                <i class="fa-brands fa-facebook-f fs-4"></i>
+            </li>
+            <li class="">
+              <i class="fab fa-twitter fs-4"></i> 
+          </li>
+            <li>
+              <i class="fab fa-instagram fs-4"></i>
+          </li>
+          <li>
+            <i class="fab fa-pinterest fs-4"></i>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end of footer section  -->
+
+
+
+  <!-- ===============jquery mixitup============================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- ===============cdnjs mixitup============================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <script src="boots/bootstrap.min.js"></script>
+
+  <script>
+    mixitup(".mix-up-items");
+    
+    menuBar = icons => (icons).classList.toggle("fa-times");
+  </script>
+</body>
+
+</html>
